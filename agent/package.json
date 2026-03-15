@@ -1,0 +1,34 @@
+{
+  "name": "pw-langchain-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent:browser": "node --loader ts-node/esm src/browser-agent.ts",
+    "agent:orchestrate": "node --loader ts-node/esm src/orchestrator.ts",
+    "agent:triage": "node --loader ts-node/esm src/triage-agent.ts",
+    "agent:explore": "node --loader ts-node/esm src/explorer-agent.ts",
+    "agent:testgen": "node --loader ts-node/esm src/testgen-agent.ts",
+    "agent:drift": "node --loader ts-node/esm src/drift-agent.ts",
+    "agent:visual": "node --loader ts-node/esm src/visual-agent.ts",
+    "agent:a11y": "node --loader ts-node/esm src/a11y-agent.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/core": "^1.1.31",
+    "@langchain/langgraph": "^1.2.1",
+    "@langchain/openai": "^1.2.12",
+    "dotenv": "^17.3.1",
+    "langchain": "^1.2.30",
+    "playwright": "^1.58.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
