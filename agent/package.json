@@ -4,8 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "agent:browser": "node --loader ts-node/esm src/browser-agent.ts",
-    "agent:orchestrate": "node --loader ts-node/esm src/orchestrator.ts",
     "agent:triage": "node --loader ts-node/esm src/triage-agent.ts",
     "agent:explore": "node --loader ts-node/esm src/explorer-agent.ts",
     "agent:testgen": "node --loader ts-node/esm src/testgen-agent.ts",

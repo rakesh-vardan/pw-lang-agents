@@ -62,7 +62,7 @@ npx playwright test tests/smoke.spec.ts  # Run smoke tests only
 
 ## Target Application
 
-All agents and tests run against the [LambdaTest E-Commerce Playground](https://ecommerce-playground.lambdatest.io/).
+All agents and tests run against the [TestMu AI E-Commerce Playground](https://ecommerce-playground.lambdatest.io/).
 
 ## Tech Stack
 
