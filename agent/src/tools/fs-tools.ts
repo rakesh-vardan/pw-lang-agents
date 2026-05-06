@@ -1,6 +1,6 @@
 // agent/src/tools/fs-tools.ts
 
-import { tool } from "langchain";
+import { tool } from "@langchain/core/tools";
 import * as z from "zod";
 import { promises as fs } from "node:fs";
 import path from "node:path";

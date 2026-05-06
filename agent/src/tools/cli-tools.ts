@@ -1,6 +1,6 @@
 // agent/src/tools/cli-tools.ts
 
-import { tool } from "langchain";
+import { tool } from "@langchain/core/tools";
 import * as z from "zod";
 import { spawn } from "node:child_process";
 

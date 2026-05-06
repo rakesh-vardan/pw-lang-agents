@@ -56,11 +56,11 @@ async function main() {
   const pathB = path.join(screenshotDir, "visual-b.png");
 
   try {
-    await ctx.page.goto(urlA, { waitUntil: "networkidle" });
+    await ctx.page.goto(urlA, { waitUntil: "load" });
     await ctx.page.screenshot({ path: pathA, fullPage: true });
     console.log(`  A: ${labelA} → ${pathA}`);
 
-    await ctx.page.goto(urlB, { waitUntil: "networkidle" });
+    await ctx.page.goto(urlB, { waitUntil: "load" });
     await ctx.page.screenshot({ path: pathB, fullPage: true });
     console.log(`  B: ${labelB} → ${pathB}`);
   } finally {
